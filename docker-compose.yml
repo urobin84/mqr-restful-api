@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  java-restful-api-postgres:
+    container_name: "java-restful-api-postgres"
+    image : postgres:12-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: java
+      POSTGRES_USER: java
+      POSTGRES_DB: restful-api
